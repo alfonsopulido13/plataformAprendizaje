@@ -13,11 +13,12 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="src\assets\js\novolver.js"></script>
 
-
+  <META HTTP-EQUIV="REFRESH" CONTENT="6;URL=/principal"> 
 </head>
 
-<body id="Paginaprincipal" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body   id="Paginaprincipal" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -33,24 +34,7 @@
         </a>
       </div>
 
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
 
-          <li><a href="tutorias"><b>Tutorias</b></a></li>
-          <li><a href="cursos"><b>Cursos</b></a></li>
-          <li><a href="conocenos"><b>Conócenos</b></a></li>
-          <!-- <li><a href="politicas">Políticas</a></li> -->
-          <li>
-            <input type="text" class="form-control-buscar" name="filterPost" placeholder="Buscar"
-              [(ngModel)]="filterPostt" required />
-          </li>
-          <li><button type="button" class="btn btn-primary btn-sm btn-radius" routerLink="/login">Iniciar
-              sesión</button></li>
-
-
-
-        </ul>
-      </div>
     </div>
   </nav>
 
@@ -59,41 +43,26 @@
 
 
     <div class="logeo">
-   
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                          <font color="black"><b>PLATAFORM</b></font>
-          <font color="red" size="6"><b>A</b></font>
-          <font color="black"><b>PRENDIZAJE</b></font>
-              </h3>
-            </div>
-            <div class="panel-body">
-              <form accept-charset="UTF-8" role="form">
-                <fieldset>
-                  <div class="form-group">
-                    <input class="form-control" placeholder="Correo electronico" type="text" required
-                      [(ngModel)]="user.username" name="username" />
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" placeholder="Contraseña" name="password" type="password" value=""
-                      required [(ngModel)]="user.password" name="password" />
-                  </div>
-                  <div class="checkbox">
-                  </div>
-                  <input class="btn btn-lg btn-info btn-block" type="submit" value="Iniciar sesión"
-                    (click)="iniciarSesion($event, item)" />
 
 
-                </fieldset>
-              </form>
-            </div>
-          </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <font color="black"><b>PLATAFORM</b></font>
+            <font color="red" size="6"><b>A</b></font>
+            <font color="black"><b>PRENDIZAJE</b></font>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <p>Cierre de sesión correcto.</p>
+          <p>Ha cerrado correctamente su sesión de la Plataforma de Aprendizaje. 
+            En unos segundos será redirigido a la página principal.</p>
+        </div>
+      </div>
 
 
-   
-    
+
+
     </div>
 
 
@@ -101,6 +70,17 @@
   </div>
 
 </body>
+<script>
+  $(document).ready(function() {
+      function disableBack() { 
+      window.history.forward() 
+    }
+      window.onload = disableBack();
+      window.onpageshow = function(evt) { 
+      if (evt.persisted) disableBack() 
+    }
+  });
+</script>
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
   <div class="container">
     <div class="row row-30">

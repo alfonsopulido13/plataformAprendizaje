@@ -134,7 +134,7 @@ constructor(private restProvider: PerfilService,
 
  Logout() {
     localStorage.clear();
-    this.router.navigate(['/principal']);
+    this.router.navigate(['/logout']);
   }
 
 
