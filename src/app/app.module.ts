@@ -36,6 +36,9 @@ import { LogoutComponent } from './logout/logout.component';
 import { TutoriasidiomasComponent } from './tutoriasidiomas/tutoriasidiomas.component';
 import { TutoriasmatematicasComponent } from './tutoriasmatematicas/tutoriasmatematicas.component';
 import { TutoriascienciasComponent } from './tutoriasciencias/tutoriasciencias.component';
+import { CursoscienciasComponent } from './cursosciencias/cursosciencias.component';
+import { CursosidiomasComponent } from './cursosidiomas/cursosidiomas.component';
+import { CursosmatematicasComponent } from './cursosmatematicas/cursosmatematicas.component';
 
 
 const config = {
@@ -67,6 +70,9 @@ const appRoutes: Routes = [
   { path: 'tutorias_idiomas' , component : TutoriasidiomasComponent},
   { path: 'tutorias_matematicas' , component : TutoriasmatematicasComponent},
   { path: 'tutorias_ciencias' , component : TutoriascienciasComponent},
+  { path: 'cursos_ciencias' , component : CursoscienciasComponent},
+  { path: 'cursos_idiomas' , component : CursosidiomasComponent},
+  { path: 'cursos_matematicas' , component : CursosmatematicasComponent},
 ];
 
 
@@ -93,6 +99,9 @@ const appRoutes: Routes = [
     TutoriasidiomasComponent,
     TutoriasmatematicasComponent,
     TutoriascienciasComponent,
+    CursoscienciasComponent,
+    CursosidiomasComponent,
+    CursosmatematicasComponent,
    
     
 

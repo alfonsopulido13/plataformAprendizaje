@@ -56,7 +56,7 @@
     </mat-toolbar> -->
 
             <input type="text" class="form-control-buscar" name="filterPost" placeholder="Buscar"
-              [(ngModel)]="filterPostt" required />
+               required />
           </li>
           <li><button type="button" class="btn btn-primary btn-sm btn-radius" routerLink="/login">Iniciar
               sesión</button></li>
@@ -68,42 +68,33 @@
     </div>
   </nav>
 <div class="politicasplat">
-    <font color="white" size="7"><b>CURSOS</b></font>
+    <font color="white" size="7"><b>CURSOS DE CIENCIAS</b></font>
 </div>
+<div class="scroll">
+<div id="bloquetutorias" class="container-fluid bg-grey" *ngFor="let d of data | filter: filterPost">
+        <div class="col-sm-3">
+          <div class="well">
+              <h3>{{ d.category.name }}</h3>
 
-<div id="bloquetutorias" class="container-fluid bg-grey" >
-
-        <div id="dividiomas"class="col-sm-3">
-         <div class="fondoidiomas">
-            </div>
-            <h3>IDIOMAS</h3>
-            <button routerLink="/cursos_idiomas" class="btn btn-success btn-sm">
-              <span class="	glyphicon glyphicon-education"></span> Información
+            <button routerLink="/registro" class="btn btn-success btn-sm">
+              <span class="glyphicon glyphicon-user"></span> Registrarse
             </button>
+            <!-- <button routerLink="/registro" class="btn btn-primary btn-sm"> Información</button> -->
           </div>
-
-            <div id="divciencias" class="col-sm-3">
-            <div class="fondociencias">
-            </div>
-            <h3>CIENCIAS</h3>
-            <button routerLink="/cursos_ciencias" class="btn btn-success btn-sm">
-              <span class="glyphicon glyphicon-education"></span> Información
-            </button>
-    
         </div>
-
-            <div id="divmatematicas" class="col-sm-3">
-            <div class="fondomatemticas">
-            </div>
-            <h3>MATEMÁTICAS</h3>
-            <button routerLink="/cursos_matematicas" class="btn btn-success btn-sm">
-              <span class="	glyphicon glyphicon-education"></span> Información
-            </button>
-  
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Nombre del Curso: {{ d.name }}</p>
+            <p>Descripción del Curso: {{ d.description }}</p>
+            <p>Duración: {{ d.duration }}</p>
+            <p>Fecha de Inicio del Curso: {{ d.start_date }}</p>
+            <p>Fecha de Fin del Curso: {{ d.end_date }}</p>
+            <p>Cantidad de Cupos: {{ d.max_spots }}</p>
+            <p>Costo: ${{ d.cost }}</p>
+          </div>
         </div>
-
 </div>
-
+</div>
 
 </body>
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
