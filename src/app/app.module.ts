@@ -33,6 +33,9 @@ import { RegistroService } from './servicios/registro.service';
 import { PerfilService } from './servicios/perfil.service';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
 import { LogoutComponent } from './logout/logout.component';
+import { TutoriasidiomasComponent } from './tutoriasidiomas/tutoriasidiomas.component';
+import { TutoriasmatematicasComponent } from './tutoriasmatematicas/tutoriasmatematicas.component';
+import { TutoriascienciasComponent } from './tutoriasciencias/tutoriasciencias.component';
 
 
 const config = {
@@ -60,7 +63,10 @@ const appRoutes: Routes = [
   {path: 'conferencia' , component: VideoconferenciaComponent},
   {path: 'detallepago' , component: DetallepagoComponent},
   {path: 'privacidad' , component: PrivacidadComponent},
-  {path: 'logout' , component: LogoutComponent}
+  {path: 'logout' , component: LogoutComponent},
+  { path: 'tutorias_idiomas' , component : TutoriasidiomasComponent},
+  { path: 'tutorias_matematicas' , component : TutoriasmatematicasComponent},
+  { path: 'tutorias_ciencias' , component : TutoriascienciasComponent},
 ];
 
 
@@ -84,6 +90,9 @@ const appRoutes: Routes = [
     PlattutoriaComponent,
     PrivacidadComponent,
     LogoutComponent,
+    TutoriasidiomasComponent,
+    TutoriasmatematicasComponent,
+    TutoriascienciasComponent,
    
     
 
