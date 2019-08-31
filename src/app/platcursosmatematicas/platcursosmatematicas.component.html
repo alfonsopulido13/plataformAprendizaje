@@ -23,7 +23,7 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="principal">
+        <a class="navbar-brand" href="dashboard">
           <font color="white"><b>PLATAFORM</b></font>
           <font color="red" size="6"><b>A</b></font>
           <font color="white"><b>PRENDIZAJE</b></font>
@@ -45,20 +45,22 @@
       </div>
     </div>
   </nav>
-<div class="headdashboard"><b>TUTORÍAS DE IDIOMAS</b></div>
+<div class="headdashboard"><b>CURSOS DE MATEMÁTICAS</b></div>
 
-<div class="contenidodisponible" *ngFor="let d of data | filter: filterPostt">
+<div class="contenidodisponible" *ngFor="let d of data | filter: filterPost">
 
             <div id="divciencias" class="col-sm-3">
             <div class="fondociencias">
             </div>
-            <font color="black" size="4"><b>{{ d.category.description }}</b></font>
+            <font color="black" size="4"><b>{{ d.name }}</b></font>
             
             <!-- <p>Tipo de tutoría: {{ d.name }}</p> -->
-            <p>Fecha de la tutoría: {{ d.date }}</p>
-            <p>Hora de inicio: {{ d.time }}</p>
-            <p>Duración de tutoría: {{ d.tutorship_type.duration }}</p>
-            <p>Costo: ${{ d.tutorship_type.cost }}</p>
+            <p>Descripción del Curso: {{ d.description }}</p>
+            <!-- <p>Duración: {{ d.duration }}</p> -->
+            <p>Fecha de Inicio del Curso: {{ d.start_date }}</p>
+            <p>Fecha de Fin del Curso: {{ d.end_date }}</p>
+            <p>Cantidad de Cupos: {{ d.max_spots }}</p>
+            <p>Costo: ${{ d.cost }}</p>
             <button  class="btn btn-success btn-sm">
               <span class="glyphicon glyphicon-user"></span> Registrarse
             </button>

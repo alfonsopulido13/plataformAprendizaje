@@ -42,6 +42,9 @@ import { CursosmatematicasComponent } from './cursosmatematicas/cursosmatematica
 import { PlattutoriascienciasComponent } from './plattutoriasciencias/plattutoriasciencias.component';
 import { PlattutoriasidiomasComponent } from './plattutoriasidiomas/plattutoriasidiomas.component';
 import { PlattutoriasmatematicasComponent } from './plattutoriasmatematicas/plattutoriasmatematicas.component';
+import { PlatcursoscienciasComponent } from './platcursosciencias/platcursosciencias.component';
+import { PlatcursosidiomasComponent } from './platcursosidiomas/platcursosidiomas.component';
+import { PlatcursosmatematicasComponent } from './platcursosmatematicas/platcursosmatematicas.component';
 
 
 const config = {
@@ -79,6 +82,9 @@ const appRoutes: Routes = [
   { path: 'plattutorias_ciencias' , component : PlattutoriascienciasComponent},
   { path: 'plattutorias_idiomas' , component : PlattutoriasidiomasComponent},
   { path: 'plattutorias_matematicas' , component : PlattutoriasmatematicasComponent},
+  { path: 'platcursos_ciencias' , component : PlatcursoscienciasComponent},
+  { path: 'platcursos_idiomas' , component : PlatcursosidiomasComponent},
+  { path: 'platcursos_matematicas' , component : PlatcursosmatematicasComponent},
 ];
 
 
@@ -111,6 +117,9 @@ const appRoutes: Routes = [
     PlattutoriascienciasComponent,
     PlattutoriasidiomasComponent,
     PlattutoriasmatematicasComponent,
+    PlatcursoscienciasComponent,
+    PlatcursosidiomasComponent,
+    PlatcursosmatematicasComponent,
    
     
 
