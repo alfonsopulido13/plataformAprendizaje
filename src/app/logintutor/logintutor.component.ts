@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-// import { AlertController} from 'ionic-angular';
 import { LoginService } from '../servicios/login.service';
-// import { Storage } from '@ionic/storage';
 import { AngularWebStorageModule } from 'angular-web-storage';
 import { AlertsModule } from 'angular-alert-module';
 import {

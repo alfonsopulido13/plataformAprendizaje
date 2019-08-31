@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 import { StorageHandlerService } from '../servicios/storage-handler.service';
 import { Router } from '@angular/router';
 import { formatDate } from '@angular/common';
-import { PerfilService } from '../servicios/perfil.service';
+import { PerfiltutorService } from '../servicios/perfiltutor.service';
 import { AlertsService } from 'angular-alert-module';
 
 @Component({
@@ -24,7 +24,7 @@ export class PerfiltutorComponent implements OnInit {
 
 
 
-constructor(private restProvider: PerfilService,
+constructor(private restProvider: PerfiltutorService,
         private alertCtrl: AlertsService,
         private router: Router) {
   }
