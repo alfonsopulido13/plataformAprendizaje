@@ -60,7 +60,7 @@ const appRoutes: Routes = [
   { path: 'conocenos' , component : ConocenosComponent},
   { path: 'politicas' , component : PoliticasComponent},
   {path: 'platperfil' , component : PerfilComponent},
-  {path: 'platprincipal' , component : PlatprincipalComponent},
+  {path: 'dashboard' , component : PlatprincipalComponent},
   {path: 'plattutorias' , component : PlattutoriaComponent},
   {path: 'platcursos' , component : PlatcursosComponent},
   {path: 'conferencia' , component: VideoconferenciaComponent},

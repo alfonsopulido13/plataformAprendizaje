@@ -48,7 +48,7 @@ export class LoginComponent {
         console.log('Sesión iniciada correctamente');
         // this.navCtrl.setRoot(HomePage);
 
-        this.router.navigate(['/platprincipal']);
+        this.router.navigate(['/dashboard']);
       },
       err => {
         console.log('Su correo o su contraseña son incorrectos.');
