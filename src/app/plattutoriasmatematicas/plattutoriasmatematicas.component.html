@@ -23,7 +23,7 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="dashboard">
+        <a class="navbar-brand" href="principal">
           <font color="white"><b>PLATAFORM</b></font>
           <font color="red" size="6"><b>A</b></font>
           <font color="white"><b>PRENDIZAJE</b></font>
@@ -39,64 +39,32 @@
           <li><a href="plattutorias"><b>Tutorias</b></a></li>
           <li><a href="platcursos"><b>Cursos</b></a></li>
           <li><a href="platperfil"><b>Perfil</b></a></li>
-          <!-- <li><a href="politicas">Políticas</a></li> -->
           <li>
-    
-     <!-- <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async"
-      >
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>TUTORIAS DISPONIBLES</span>
-    </mat-toolbar> -->
-
 
         </ul>
       </div>
     </div>
   </nav>
+<div class="headdashboard"><b>TUTORÍAS DE CIENCIAS</b></div>
 
-  <div class="headdashboard"><b>TUTORÍAS DISPONIBLES</b></div>
-
-
-<div id="bloquetutorias" class="container-fluid bg-grey" >
-
-        <div id="dividiomas"class="col-sm-3">
-         <div class="fondoidiomas">
-            </div>
-            <h3>IDIOMAS</h3>
-            <button routerLink="/plattutorias_idiomas" class="btn btn-success btn-sm">
-              <span class="	glyphicon glyphicon-education"></span> Información
-            </button>
-          </div>
+<div class="contenidodisponible" *ngFor="let d of data | filter: filterPostt">
 
             <div id="divciencias" class="col-sm-3">
             <div class="fondociencias">
             </div>
-            <h3>CIENCIAS</h3>
-            <button routerLink="/plattutorias_ciencias" class="btn btn-success btn-sm">
-              <span class="glyphicon glyphicon-education"></span> Información
+            <font color="black" size="4"><b>{{ d.category.description }}</b></font>
+            
+            <!-- <p>Tipo de tutoría: {{ d.name }}</p> -->
+            <p>Fecha de la tutoría: {{ d.date }}</p>
+            <p>Hora de inicio: {{ d.time }}</p>
+            <p>Duración de tutoría: {{ d.tutorship_type.duration }}</p>
+            <p>Costo: ${{ d.tutorship_type.cost }}</p>
+            <button  class="btn btn-success btn-sm">
+              <span class="glyphicon glyphicon-user"></span> Registrarse
             </button>
-    
-        </div>
-
-            <div id="divmatematicas" class="col-sm-3">
-            <div class="fondomatemticas">
-            </div>
-            <h3>MATEMÁTICAS</h3>
-            <button routerLink="/plattutorias_matematicas" class="btn btn-success btn-sm">
-              <span class="	glyphicon glyphicon-education"></span> Información
-            </button>
-  
         </div>
 
 </div>
-
 
 </body>
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
