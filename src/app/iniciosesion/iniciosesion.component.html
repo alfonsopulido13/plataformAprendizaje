@@ -17,7 +17,7 @@
 
 </head>
 
-<body id="Paginatutorias" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="Paginaprincipal" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -41,24 +41,10 @@
           <li><a href="conocenos"><b>Conócenos</b></a></li>
           <!-- <li><a href="politicas">Políticas</a></li> -->
           <li>
-    
-     <!-- <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async"
-      >
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>TUTORIAS DISPONIBLES</span>
-    </mat-toolbar> -->
-
             <input type="text" class="form-control-buscar" name="filterPost" placeholder="Buscar"
               [(ngModel)]="filterPostt" required />
           </li>
-          <li><button type="button" class="btn btn-primary btn-sm btn-radius" routerLink="/inicio_sesion">Iniciar
+          <li><button type="button" class="btn btn-primary btn-sm btn-radius" routerLink="/login">Iniciar
               sesión</button></li>
 
 
@@ -67,44 +53,30 @@
       </div>
     </div>
   </nav>
-<div class="politicasplat">
-    <font color="white" size="7"><b>TUTORÍAS</b></font>
-</div>
+  <div id="prueba" class="col-sm-8 col-xl-3">
+    <p>
+      <font color="red" size="5"><b>Inicio sesión estudiantes</b></font>
+    </p>
 
-<div id="bloquetutorias" class="container-fluid bg-grey" >
-
-        <div id="dividiomas"class="col-sm-3">
-         <div class="fondoidiomas">
-            </div>
-            <h3>IDIOMAS</h3>
-            <button routerLink="/tutorias_idiomas" class="btn btn-success btn-sm">
-              <span class="	glyphicon glyphicon-education"></span> Información
-            </button>
-          </div>
-
-            <div id="divciencias" class="col-sm-3">
-            <div class="fondociencias">
-            </div>
-            <h3>CIENCIAS</h3>
-            <button routerLink="/tutorias_ciencias" class="btn btn-success btn-sm">
-              <span class="glyphicon glyphicon-education"></span> Información
-            </button>
-    
-        </div>
-
-            <div id="divmatematicas" class="col-sm-3">
-            <div class="fondomatemticas">
-            </div>
-            <h3>MATEMÁTICAS</h3>
-            <button routerLink="/tutorias_matematicas" class="btn btn-success btn-sm">
-              <span class="	glyphicon glyphicon-education"></span> Información
-            </button>
-  
-        </div>
-
-</div>
+    <p> <button routerLink="/login" class=" btn btn-lg btn-info">
+         Iniciar sesión
+      </button></p>
 
 
+
+   </div>
+     <div id="prueba" class="col-sm-8 col-xl-3">
+    <p>
+      <font color="red" size="5"><b>Inicio sesión tutores</b></font>
+    </p>
+
+    <p> <button routerLink="/login_tutor" class=" btn btn-lg btn-info">
+         Iniciar sesión
+      </button></p>
+
+
+
+   </div>
 </body>
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
   <div class="container">
@@ -124,6 +96,8 @@
           <li><a href="conocenos"><b>Conócenos</b></a></li>
           <li><a href="politicas"><b>Políticas</b></a></li>
           <li><a href="privacidad"><b>Privacidad</b></a></li>
+          <!-- <li><a href="#"><b>Solicitud de curso único</b></a></li>
+          <li><a href="#"><b>T & CS</b></a></li> -->
         </ul>
       </div>
       <div class="col-md-4 col-xl-3">
@@ -151,7 +125,6 @@
       </div>
     </div>
   </div>
-
 </footer>
 
 </html>

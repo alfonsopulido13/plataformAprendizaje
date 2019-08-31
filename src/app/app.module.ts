@@ -45,6 +45,10 @@ import { PlattutoriasmatematicasComponent } from './plattutoriasmatematicas/plat
 import { PlatcursoscienciasComponent } from './platcursosciencias/platcursosciencias.component';
 import { PlatcursosidiomasComponent } from './platcursosidiomas/platcursosidiomas.component';
 import { PlatcursosmatematicasComponent } from './platcursosmatematicas/platcursosmatematicas.component';
+import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
+import { LogintutorComponent } from './logintutor/logintutor.component';
+import { DashboardtutorComponent } from './dashboardtutor/dashboardtutor.component';
+import { PerfiltutorComponent } from './perfiltutor/perfiltutor.component';
 
 
 const config = {
@@ -85,6 +89,10 @@ const appRoutes: Routes = [
   { path: 'platcursos_ciencias' , component : PlatcursoscienciasComponent},
   { path: 'platcursos_idiomas' , component : PlatcursosidiomasComponent},
   { path: 'platcursos_matematicas' , component : PlatcursosmatematicasComponent},
+  { path: 'inicio_sesion' , component : IniciosesionComponent},
+  { path: 'login_tutor' , component : LogintutorComponent},
+  { path: 'dashboard_tutor' , component : DashboardtutorComponent},
+  { path: 'perfil_tutor' , component : PerfiltutorComponent},
 ];
 
 
@@ -120,6 +128,10 @@ const appRoutes: Routes = [
     PlatcursoscienciasComponent,
     PlatcursosidiomasComponent,
     PlatcursosmatematicasComponent,
+    IniciosesionComponent,
+    LogintutorComponent,
+    DashboardtutorComponent,
+    PerfiltutorComponent,
    
     
 
