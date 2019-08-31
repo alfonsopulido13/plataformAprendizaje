@@ -39,6 +39,7 @@ import { TutoriascienciasComponent } from './tutoriasciencias/tutoriasciencias.c
 import { CursoscienciasComponent } from './cursosciencias/cursosciencias.component';
 import { CursosidiomasComponent } from './cursosidiomas/cursosidiomas.component';
 import { CursosmatematicasComponent } from './cursosmatematicas/cursosmatematicas.component';
+import { PlattutoriascienciasComponent } from './plattutoriasciencias/plattutoriasciencias.component';
 
 
 const config = {
@@ -73,6 +74,7 @@ const appRoutes: Routes = [
   { path: 'cursos_ciencias' , component : CursoscienciasComponent},
   { path: 'cursos_idiomas' , component : CursosidiomasComponent},
   { path: 'cursos_matematicas' , component : CursosmatematicasComponent},
+  { path: 'plattutorias_ciencias' , component : PlattutoriascienciasComponent},
 ];
 
 
@@ -102,6 +104,7 @@ const appRoutes: Routes = [
     CursoscienciasComponent,
     CursosidiomasComponent,
     CursosmatematicasComponent,
+    PlattutoriascienciasComponent,
    
     
 

@@ -20,6 +20,7 @@
 body {
     background-image: url(src\images\fondo_conocenos.png);
     background-size: cover;
+    height:auto;
   }
 .scroll { 
   margin-top:30px;

@@ -1,6 +1,6 @@
 
 .navbar {
-  background-color:#ffff;
+  background-color:#2d3246;
   z-index: 9999;
   border: 0;
   font-size: 14px !important;
@@ -14,7 +14,7 @@
 }
 
 .body{
-  height:100%;
+  height:auto;
 }
 
 .pr-xl-4{

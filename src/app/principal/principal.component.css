@@ -21,6 +21,7 @@
 body {
     background-image: url(src\images\fondo_inicio-26.PNG);
     background-size: cover;
+    height:auto;
   }
 
 
