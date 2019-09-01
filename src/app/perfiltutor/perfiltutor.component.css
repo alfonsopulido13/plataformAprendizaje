@@ -30,7 +30,7 @@
   margin-top: 10%; 
   padding: 5px 20px 5px 20px;
   background-color: #38b6ff;
-
+  margin-left:15%;
 }
 
 .form-control-buscar{
@@ -199,7 +199,9 @@ ul.icons li:last-child {
 
   /* Profile sidebar */
   .profile-sidebar {
-    margin-top: 50px;
+    margin-top:4px;
+    padding-top:30px;
+    padding-bottom:8px;
     background: #fff;
   }
 
@@ -292,10 +294,18 @@ ul.icons li:last-child {
   /* Profile Content */
   .profile-content {
     
-    margin-top: 55px;
-    align-self: center;
-    background: #fff;
-    min-height: 310px;
-    max-width: 85%;
+    margin-top: 65px;
+    align-self: right;
+    background: #BDC3C7;
+    min-height: 340px;
+    max-width: 75%;
+    border-style: solid;
+    border-width: medium;
+  }
+
+  .contenidoperfil{
+    margin-left:20%;
+    width:1150px;
+    /* background-color:red; */
   }
 

@@ -18,10 +18,10 @@
   font-size: 20px;
 }
 
-#Paginaprincipal {
+.body {
     /* background-image: url(src\images\fondo_conocenos.PNG); */
     background-size: cover;
-    height:130%;
+    height:auto;
   }
 
 
