@@ -36,16 +36,19 @@
           Desconectarse
         </button>
       </div> -->
-    <div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
+      <div class="col-sm-3">
+    <div id="salaconferencia" class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
       <iframe allow="microphone; camera"
         style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;"
         src="https://success.zoom.us/wc/join/6383387680" frameborder="0"></iframe> 
     </div>
+  </div>
     <div class="col-xs-6">
       <input type="text" id="img-search-field" placeholder="Buscar imagenes" title="Escriba algo" [(ngModel)]="query" />
       <button (click)="imageSearch(query)" formtarget="_blank" class="btn btn-primary btn-sm">
         BUSCAR
       </button>
+    
       <div class="galeria">
         <h1>Imagenes buscadas</h1>
         <div class="linea"></div>
