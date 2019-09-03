@@ -1,80 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bootstrap Theme Company Page</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  </head>
 
-  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<head>
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="platprincipal">Logo </a>
-          <a class="navbar-brand">
-            <input
-              type="text"
-              class="form-control"
-              name="filterPost"
-              placeholder="Buscar cursos"
-              [(ngModel)]="filterPost"
-              required
-            />
-          </a>
-        </div>
+</head>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="platprincipal">INICIO</a></li>
-            <li><a href="platcursos">CURSOS </a></li>
-            <li><a href="plattutorias">TUTORÍAS </a></li>
-            <li><a href="platperfil">PERFIL</a></li>
-          </ul>
-        </div>
+<body id="Paginatutorias" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="dashboard">
+          <font color="white"><b>PLATAFORM</b></font>
+          <font color="red" size="6"><b>A</b></font>
+          <font color="white"><b>PRENDIZAJE</b></font>
+        </a>
+        <a class="navbar-brand">
+
+        </a>
       </div>
-    </nav>
 
-    <div class="row" *ngFor="let d of data | filter: filterPost">
-        <div class="col-sm-3">
-          <div class="well">
-            <h3>{{ d.category.name }}</h3>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
 
-            <button routerLink="/registro" class="btn btn-success btn-sm">
-              <span class="glyphicon glyphicon-user"></span> Registrarse
+          <li><a href="plattutorias"><b>Tutorias</b></a></li>
+          <li><a href="platcursos"><b>Cursos</b></a></li>
+          <li><a href="platperfil"><b>Perfil</b></a></li>
+          <!-- <li><a href="politicas">Políticas</a></li> -->
+          <li>
+    
+     <!-- <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>TUTORIAS DISPONIBLES</span>
+    </mat-toolbar> -->
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="headdashboard"><b>CURSOS DISPONIBLES</b></div>
+
+
+<div id="bloquetutorias" class="container-fluid bg-grey" >
+
+        <div id="dividiomas"class="col-sm-3">
+         <div class="fondoidiomas">
+            </div>
+            <h3>IDIOMAS</h3>
+            <button routerLink="/platcursos_idiomas" class="btn btn-success btn-sm">
+              <span class="	glyphicon glyphicon-education"></span> Información
             </button>
-            <!-- <button routerLink="/registro" class="btn btn-primary btn-sm"> Información</button> -->
           </div>
+
+            <div id="divciencias" class="col-sm-3">
+            <div class="fondociencias">
+            </div>
+            <h3>CIENCIAS</h3>
+            <button routerLink="/platcursos_ciencias" class="btn btn-success btn-sm">
+              <span class="glyphicon glyphicon-education"></span> Información
+            </button>
+    
         </div>
-        <div class="col-sm-9">
-          <div class="well">
-            <p>Nombre del Curso: {{ d.name }}</p>
-            <p>Descripción del Curso: {{ d.description }}</p>
-            <p>Duración: {{ d.duration }}</p>
-            <p>Fecha de Inicio del Curso: {{ d.start_date }}</p>
-            <p>Fecha de Fin del Curso: {{ d.end_date }}</p>
-            <p>Cantidad de Cupos: {{ d.max_spots }}</p>
-            <p>Costo: ${{ d.cost }}</p>
-          </div>
+
+            <div id="divmatematicas" class="col-sm-3">
+            <div class="fondomatemticas">
+            </div>
+            <h3>MATEMÁTICAS</h3>
+            <button routerLink="/platcursos_matematicas" class="btn btn-success btn-sm">
+              <span class="	glyphicon glyphicon-education"></span> Información
+            </button>
+  
+        </div>
+
+</div>
+
+
+</body>
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+  <div class="container">
+    <div class="row row-30">
+      <div class="col-md-4 col-xl-5">
+        <div class="pr-xl-4">
+          <br>
+          <p>
+            <font color="white"><b>PLATAFORM</b></font>
+            <font color="red" size="6"><b>A</b></font>
+            <font color="white"><b>PRENDIZAJE</b></font>
+          </p>
         </div>
       </div>
+      <div class="col-md-4">
+      <br>
+      <br>
+      <p>
+      Plataforma de aprendizaje - OpenLearning - Guayaquil - Ecuador <br>
 
-  </body>
+© El contenido de esta obra es de propiedad de InnovaSystem. Todos los derechos reservados.
+
+Prohibida su reproducción total o parcial, comunicación pública o distribución sin autorización previa del titular de los derechos.
+      </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
 </html>

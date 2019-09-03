@@ -33,6 +33,22 @@ import { RegistroService } from './servicios/registro.service';
 import { PerfilService } from './servicios/perfil.service';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
 import { LogoutComponent } from './logout/logout.component';
+import { TutoriasidiomasComponent } from './tutoriasidiomas/tutoriasidiomas.component';
+import { TutoriasmatematicasComponent } from './tutoriasmatematicas/tutoriasmatematicas.component';
+import { TutoriascienciasComponent } from './tutoriasciencias/tutoriasciencias.component';
+import { CursoscienciasComponent } from './cursosciencias/cursosciencias.component';
+import { CursosidiomasComponent } from './cursosidiomas/cursosidiomas.component';
+import { CursosmatematicasComponent } from './cursosmatematicas/cursosmatematicas.component';
+import { PlattutoriascienciasComponent } from './plattutoriasciencias/plattutoriasciencias.component';
+import { PlattutoriasidiomasComponent } from './plattutoriasidiomas/plattutoriasidiomas.component';
+import { PlattutoriasmatematicasComponent } from './plattutoriasmatematicas/plattutoriasmatematicas.component';
+import { PlatcursoscienciasComponent } from './platcursosciencias/platcursosciencias.component';
+import { PlatcursosidiomasComponent } from './platcursosidiomas/platcursosidiomas.component';
+import { PlatcursosmatematicasComponent } from './platcursosmatematicas/platcursosmatematicas.component';
+import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
+import { LogintutorComponent } from './logintutor/logintutor.component';
+import { DashboardtutorComponent } from './dashboardtutor/dashboardtutor.component';
+import { PerfiltutorComponent } from './perfiltutor/perfiltutor.component';
 
 
 const config = {
@@ -54,13 +70,29 @@ const appRoutes: Routes = [
   { path: 'conocenos' , component : ConocenosComponent},
   { path: 'politicas' , component : PoliticasComponent},
   {path: 'platperfil' , component : PerfilComponent},
-  {path: 'platprincipal' , component : PlatprincipalComponent},
+  {path: 'dashboard' , component : PlatprincipalComponent},
   {path: 'plattutorias' , component : PlattutoriaComponent},
   {path: 'platcursos' , component : PlatcursosComponent},
   {path: 'conferencia' , component: VideoconferenciaComponent},
   {path: 'detallepago' , component: DetallepagoComponent},
   {path: 'privacidad' , component: PrivacidadComponent},
-  {path: 'logout' , component: LogoutComponent}
+  {path: 'logout' , component: LogoutComponent},
+  { path: 'tutorias_idiomas' , component : TutoriasidiomasComponent},
+  { path: 'tutorias_matematicas' , component : TutoriasmatematicasComponent},
+  { path: 'tutorias_ciencias' , component : TutoriascienciasComponent},
+  { path: 'cursos_ciencias' , component : CursoscienciasComponent},
+  { path: 'cursos_idiomas' , component : CursosidiomasComponent},
+  { path: 'cursos_matematicas' , component : CursosmatematicasComponent},
+  { path: 'plattutorias_ciencias' , component : PlattutoriascienciasComponent},
+  { path: 'plattutorias_idiomas' , component : PlattutoriasidiomasComponent},
+  { path: 'plattutorias_matematicas' , component : PlattutoriasmatematicasComponent},
+  { path: 'platcursos_ciencias' , component : PlatcursoscienciasComponent},
+  { path: 'platcursos_idiomas' , component : PlatcursosidiomasComponent},
+  { path: 'platcursos_matematicas' , component : PlatcursosmatematicasComponent},
+  { path: 'inicio_sesion' , component : IniciosesionComponent},
+  { path: 'login_tutor' , component : LogintutorComponent},
+  { path: 'dashboard_tutor' , component : DashboardtutorComponent},
+  { path: 'perfil_tutor' , component : PerfiltutorComponent},
 ];
 
 
@@ -84,6 +116,22 @@ const appRoutes: Routes = [
     PlattutoriaComponent,
     PrivacidadComponent,
     LogoutComponent,
+    TutoriasidiomasComponent,
+    TutoriasmatematicasComponent,
+    TutoriascienciasComponent,
+    CursoscienciasComponent,
+    CursosidiomasComponent,
+    CursosmatematicasComponent,
+    PlattutoriascienciasComponent,
+    PlattutoriasidiomasComponent,
+    PlattutoriasmatematicasComponent,
+    PlatcursoscienciasComponent,
+    PlatcursosidiomasComponent,
+    PlatcursosmatematicasComponent,
+    IniciosesionComponent,
+    LogintutorComponent,
+    DashboardtutorComponent,
+    PerfiltutorComponent,
    
     
 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body id="Paginatutorias" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="dashboard">
+          <font color="white"><b>PLATAFORM</b></font>
+          <font color="red" size="6"><b>A</b></font>
+          <font color="white"><b>PRENDIZAJE</b></font>
+        </a>
+        <a class="navbar-brand">
+
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="plattutorias"><b>Tutorias</b></a></li>
+          <li><a href="platcursos"><b>Cursos</b></a></li>
+          <li><a href="platperfil"><b>Perfil</b></a></li>
+          <li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="headdashboard"><b>CURSOS DE MATEMÁTICAS</b></div>
+
+<div class="contenidodisponible" *ngFor="let d of data | filter: filterPost">
+
+            <div id="divciencias" class="col-sm-3">
+            <div class="fondociencias">
+            </div>
+            <font color="black" size="4"><b>{{ d.name }}</b></font>
+            
+            <!-- <p>Tipo de tutoría: {{ d.name }}</p> -->
+            <p>Descripción del Curso: {{ d.description }}</p>
+            <!-- <p>Duración: {{ d.duration }}</p> -->
+            <p>Fecha de Inicio del Curso: {{ d.start_date }}</p>
+            <p>Fecha de Fin del Curso: {{ d.end_date }}</p>
+            <p>Cantidad de Cupos: {{ d.max_spots }}</p>
+            <p>Costo: ${{ d.cost }}</p>
+            <button  class="btn btn-success btn-sm">
+              <span class="glyphicon glyphicon-user"></span> Registrarse
+            </button>
+        </div>
+
+</div>
+
+</body>
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+  <div class="container">
+    <div class="row row-30">
+      <div class="col-md-4 col-xl-5">
+        <div class="pr-xl-4">
+          <br>
+          <p>
+            <font color="white"><b>PLATAFORM</b></font>
+            <font color="red" size="6"><b>A</b></font>
+            <font color="white"><b>PRENDIZAJE</b></font>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+      <br>
+      <br>
+      <p>
+      Plataforma de aprendizaje - OpenLearning - Guayaquil - Ecuador <br>
+
+© El contenido de esta obra es de propiedad de InnovaSystem. Todos los derechos reservados.
+
+Prohibida su reproducción total o parcial, comunicación pública o distribución sin autorización previa del titular de los derechos.
+      </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</html>
